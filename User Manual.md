@@ -85,7 +85,7 @@ RETRAIN = False
 
 ---
 
-###  Step 4: Cache Reset (Csche referesh.py)
+###  Step 4: Cache Reset (Cache referesh.py)
 
 **Purpose:**
 
