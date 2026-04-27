@@ -18,7 +18,7 @@ You must run cells in exact sequence. No skipping.
 
 ---
 
-###  Step 1: Environment Setup (CELL 1)
+###  Step 1: Environment Setup (Setup file.py)
 
 **Purpose:**
 
@@ -35,7 +35,7 @@ You must run cells in exact sequence. No skipping.
 
 ---
 
-###  Step 2: Model Training (CELL 2)
+###  Step 2: Model Training (train.py)
 
 **Purpose:**
 
@@ -67,7 +67,7 @@ RETRAIN = False
 
 ---
 
-###  Step 3: Random Test Selection (CELL 3)
+###  Step 3: Random Test Selection (Select test.py)
 
 **Purpose:**
 
@@ -85,7 +85,7 @@ RETRAIN = False
 
 ---
 
-###  Step 4: Cache Reset (CELL 4)
+###  Step 4: Cache Reset (Csche referesh.py)
 
 **Purpose:**
 
@@ -97,7 +97,7 @@ RETRAIN = False
 
 ---
 
-###  Step 5: Inference + Visualization (CELL 5)
+###  Step 5: Inference + Visualization (Inference.py)
 
 **Purpose:**
 
@@ -135,7 +135,7 @@ outputs/
 
 ---
 
-###  Step 6: Evaluation (CELL 6)
+###  Step 6: Evaluation (Evaluation)
 
 **Purpose:**
 
@@ -163,7 +163,7 @@ results/{CATEGORY}_evaluation.csv
 
 ---
 
-###  Step 7: UI Setup (CELL 7)
+###  Step 7: UI Setup (Setup UI.py)
 
 **Purpose:**
 
@@ -172,7 +172,7 @@ results/{CATEGORY}_evaluation.csv
 
 ---
 
-###  Step 8: Dashboard (CELL 8)
+###  Step 8: Dashboard (Dashboard.py)
 
 **Purpose:**
 
@@ -187,7 +187,7 @@ results/{CATEGORY}_evaluation.csv
 
 ---
 
-###  Step 9: Launch UI (CELL 9)
+###  Step 9: Launch UI (launch.py)
 
 **Purpose:**
 
@@ -258,7 +258,7 @@ POC5_Project/
 ## 5. Critical Notes (Do NOT Ignore)
 
 * Models must be trained before inference
-* Cell 3 must run before Cell 5
+* Select test.py must run before Inference.py
 * Cloudflare requires Streamlit to be active
 * Dataset must remain inside Google Drive
 
@@ -275,12 +275,12 @@ POC5_Project/
 
 ## 7. Recommended Usage Flow
 
-1. Run Cell 1 → Setup
-2. Run Cell 2 → Train
-3. Run Cell 3 → Select test
-4. Run Cell 5 → Inference
-5. Run Cell 6 → Evaluation
-6. Run Cell 7–9 → UI
+1. Run 1 → Setup
+2. Run 2 → Train
+3. Run 3 → Select test
+4. Run 5 → Inference
+5. Run 6 → Evaluation
+6. Run 7–9 → UI
 
 ---
 
